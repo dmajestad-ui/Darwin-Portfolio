@@ -1006,11 +1006,40 @@ button {
     padding: 1.6rem 1.5rem;
 }
 
+
 .resume-actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.8rem;
+    gap: 12px;
+    margin-top: 20px;
 }
+
+.resume-btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 1px solid #6c63ff;
+    border-radius: 8px;
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.resume-btn:hover {
+    background: #6c63ff;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.resume-btn-primary {
+    background: #6c63ff;
+    color: #ffffff;
+}
+
+.resume-btn-primary:hover {
+    background: #554be0;
+}
+
 
 .contact-grid {
     display: grid;
@@ -1477,4 +1506,20 @@ textarea {
         opacity: 1;
         transform: none;
     }
+}
+
+
+.resume-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.resume-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
 }
